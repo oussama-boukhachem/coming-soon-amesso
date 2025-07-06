@@ -1,0 +1,451 @@
+/* Coming Soon Amesso Admin Styles */
+
+.csa-admin-wrap {
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.csa-admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.csa-toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.csa-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.csa-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.csa-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.csa-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .csa-slider {
+    background-color: #2196F3;
+}
+
+input:checked + .csa-slider:before {
+    transform: translateX(26px);
+}
+
+.csa-toggle-label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.csa-admin-content {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+}
+
+.csa-tab-nav {
+    display: flex;
+    border-bottom: 1px solid #c3c4c7;
+    background: #f6f7f7;
+}
+
+.csa-tab-btn {
+    padding: 15px 25px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.csa-tab-btn:hover {
+    background: #e8e9ea;
+}
+
+.csa-tab-btn.active {
+    background: #fff;
+    border-bottom-color: #2196F3;
+    color: #2196F3;
+}
+
+.csa-tab-content {
+    display: none;
+    padding: 30px;
+}
+
+.csa-tab-content.active {
+    display: block;
+}
+
+.csa-section {
+    margin-bottom: 40px;
+}
+
+.csa-section:last-child {
+    margin-bottom: 0;
+}
+
+.csa-section h3 {
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f1;
+    color: #1d2327;
+    font-size: 18px;
+}
+
+.csa-field {
+    margin-bottom: 20px;
+}
+
+.csa-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.csa-field input[type="text"],
+.csa-field input[type="email"],
+.csa-field input[type="url"],
+.csa-field input[type="datetime-local"],
+.csa-field textarea,
+.csa-field select {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.csa-field textarea {
+    resize: vertical;
+    font-family: monospace;
+}
+
+.csa-field input:focus,
+.csa-field textarea:focus,
+.csa-field select:focus {
+    border-color: #2196F3;
+    box-shadow: 0 0 0 1px #2196F3;
+    outline: none;
+}
+
+.csa-radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+.csa-radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.csa-checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.csa-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0 !important;
+    font-weight: normal !important;
+}
+
+.csa-checkbox input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.csa-media-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.csa-image-preview {
+    position: relative;
+    display: inline-block;
+    max-width: 200px;
+}
+
+.csa-image-preview img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.csa-remove-image {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.csa-color-picker {
+    max-width: 100px !important;
+}
+
+.csa-form-footer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 30px;
+    border-top: 1px solid #c3c4c7;
+    background: #f6f7f7;
+}
+
+.csa-save-btn {
+    min-width: 120px;
+}
+
+.csa-save-message {
+    font-weight: 600;
+}
+
+.csa-save-message.success {
+    color: #00a32a;
+}
+
+.csa-save-message.error {
+    color: #d63638;
+}
+
+.csa-code-editor {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* Range slider */
+input[type="range"] {
+    width: 100%;
+    max-width: 300px;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    border-radius: 3px;
+    background: #ddd;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2196F3;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2196F3;
+    cursor: pointer;
+    border: none;
+}
+
+.csa-range-value {
+    margin-left: 15px;
+    font-weight: 600;
+    color: #2196F3;
+}
+
+/* Subscribers page */
+.csa-subscribers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.csa-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.csa-stat-box {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    text-align: center;
+    min-width: 120px;
+}
+
+.csa-stat-number {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    color: #2196F3;
+    line-height: 1;
+}
+
+.csa-stat-label {
+    display: block;
+    font-size: 12px;
+    color: #646970;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.csa-status {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.csa-status-active {
+    background: #d1e7dd;
+    color: #0f5132;
+}
+
+.csa-status-inactive {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.csa-empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #646970;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .csa-admin-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+    
+    .csa-tab-nav {
+        flex-wrap: wrap;
+    }
+    
+    .csa-tab-btn {
+        flex: 1;
+        min-width: 120px;
+    }
+    
+    .csa-radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .csa-checkbox-group {
+        grid-template-columns: 1fr;
+    }
+    
+    .csa-subscribers-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+    
+    .csa-form-footer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+}
+
+/* Loading state */
+.csa-loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.csa-loading .csa-save-btn {
+    position: relative;
+}
+
+.csa-loading .csa-save-btn:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    border: 2px solid transparent;
+    border-top-color: currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hide/show fields based on background type */
+.csa-bg-color-field,
+.csa-bg-image-field {
+    display: none;
+}
+
+.csa-bg-color-field.show,
+.csa-bg-image-field.show {
+    display: block;
+}

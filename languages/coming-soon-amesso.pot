@@ -1,0 +1,61 @@
+# Coming Soon Amesso - Translation Template
+# This file is distributed under the same license as the Coming Soon Amesso plugin.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Coming Soon Amesso 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/coming-soon-amesso\n"
+"POT-Creation-Date: 2025-01-01 00:00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: coming-soon-amesso.php
+msgid "Coming Soon"
+msgstr ""
+
+msgid "We're launching something amazing!"
+msgstr ""
+
+msgid "Our website is under construction. We'll be here soon with our new awesome site."
+msgstr ""
+
+msgid "Enter your email address"
+msgstr ""
+
+msgid "Notify Me"
+msgstr ""
+
+msgid "Days"
+msgstr ""
+
+msgid "Hours"
+msgstr ""
+
+msgid "Minutes"
+msgstr ""
+
+msgid "Seconds"
+msgstr ""
+
+msgid "We're Live!"
+msgstr ""
+
+msgid "Thank you for subscribing! We'll notify you when we launch."
+msgstr ""
+
+msgid "Please enter a valid email address."
+msgstr ""
+
+msgid "This email is already subscribed."
+msgstr ""
+
+msgid "Failed to subscribe. Please try again."
+msgstr ""
+
+msgid "An error occurred. Please try again."
+msgstr ""
